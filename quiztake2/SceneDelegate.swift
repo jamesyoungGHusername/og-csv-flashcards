@@ -18,7 +18,43 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        print("open file called")
+        var firstRow=false
+        let nC = self.window?.rootViewController as? UINavigationController
+        let mainMenu=nC?.viewControllers.first as? DeckListTableViewController
+        guard let url = URLContexts.first?.url else {
+                return
+            }
+        let deckManager:DeckManager=DeckManager()
+        let alert = UIAlertController(title: "Importing", message: "Save first row as title and category?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            firstRow=true
+            do{
+                deckManager.loadDeckFromImport(ext: url,firstRow: firstRow)
+                //Add closure to load deck from import. If it fails the getDeck(i:0) method also will fail and crash the app.
+                try deckManager.saveDeck(deck: deckManager.getDeck(i: 0))
+                mainMenu?.dm.loadDecks()
+                mainMenu?.dm.calculateCategories()
+                mainMenu?.tableViewRef.reloadData()
+            }catch{
+                print("error loading in deck")
+            }
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
+            do{
+                deckManager.loadDeckFromImport(ext: url,firstRow: firstRow)
+                try deckManager.saveDeck(deck: deckManager.getDeck(i: 0))
+                mainMenu?.dm.loadDecks()
+                mainMenu?.dm.calculateCategories()
+                mainMenu?.tableViewRef.reloadData()
+            }catch{
+                print("error loading in deck")
+            }
+        }))
+        mainMenu?.present(alert, animated: true)
 
+    }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

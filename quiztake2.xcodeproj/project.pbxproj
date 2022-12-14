@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4132146271B7C770034257B /* DeckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132145271B7C770034257B /* DeckManager.swift */; };
+		C4132152271B91AD0034257B /* DeckListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4132151271B91AD0034257B /* DeckListTableViewController.swift */; };
+		C413219C271C992C0034257B /* NewDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C413219B271C992C0034257B /* NewDeckViewController.swift */; };
 		C42E40D927131FA500813F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E40D827131FA500813F9A /* AppDelegate.swift */; };
 		C42E40DB27131FA500813F9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E40DA27131FA500813F9A /* SceneDelegate.swift */; };
-		C42E40DD27131FA500813F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E40DC27131FA500813F9A /* ViewController.swift */; };
 		C42E40E027131FA500813F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42E40DE27131FA500813F9A /* Main.storyboard */; };
 		C42E40E227131FA700813F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42E40E127131FA700813F9A /* Assets.xcassets */; };
 		C42E40E527131FA700813F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42E40E327131FA700813F9A /* LaunchScreen.storyboard */; };
 		C42E40F027131FA700813F9A /* quiztake2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E40EF27131FA700813F9A /* quiztake2Tests.swift */; };
 		C42E40FA27131FA700813F9A /* quiztake2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E40F927131FA700813F9A /* quiztake2UITests.swift */; };
 		C42E40FC27131FA700813F9A /* quiztake2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E40FB27131FA700813F9A /* quiztake2UITestsLaunchTests.swift */; };
+		C46DEB7C27221FDF008B9653 /* CardEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46DEB7B27221FDF008B9653 /* CardEditVC.swift */; };
+		C479F70A272779F4002577C6 /* QuizPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479F709272779F4002577C6 /* QuizPVC.swift */; };
+		C479F70C27277A27002577C6 /* QuestionDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479F70B27277A27002577C6 /* QuestionDisplayViewController.swift */; };
+		C479F70E27277A64002577C6 /* AnswerDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479F70D27277A64002577C6 /* AnswerDisplayViewController.swift */; };
+		C479F7102728A694002577C6 /* QuizReadyScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C479F70F2728A694002577C6 /* QuizReadyScreenVC.swift */; };
+		C498ED602713B43100C54AA9 /* BaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498ED5F2713B43100C54AA9 /* BaseCard.swift */; };
+		C498ED622713BCEB00C54AA9 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498ED612713BCEB00C54AA9 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4132145271B7C770034257B /* DeckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckManager.swift; sourceTree = "<group>"; };
+		C4132151271B91AD0034257B /* DeckListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListTableViewController.swift; sourceTree = "<group>"; };
+		C413219B271C992C0034257B /* NewDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeckViewController.swift; sourceTree = "<group>"; };
 		C42E40D527131FA500813F9A /* quiztake2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quiztake2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42E40D827131FA500813F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C42E40DA27131FA500813F9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C42E40DC27131FA500813F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C42E40DF27131FA500813F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C42E40E127131FA700813F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C42E40E427131FA700813F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		C42E40F527131FA700813F9A /* quiztake2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quiztake2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42E40F927131FA700813F9A /* quiztake2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiztake2UITests.swift; sourceTree = "<group>"; };
 		C42E40FB27131FA700813F9A /* quiztake2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quiztake2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C46DEB7B27221FDF008B9653 /* CardEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEditVC.swift; sourceTree = "<group>"; };
+		C479F709272779F4002577C6 /* QuizPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPVC.swift; sourceTree = "<group>"; };
+		C479F70B27277A27002577C6 /* QuestionDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDisplayViewController.swift; sourceTree = "<group>"; };
+		C479F70D27277A64002577C6 /* AnswerDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDisplayViewController.swift; sourceTree = "<group>"; };
+		C479F70F2728A694002577C6 /* QuizReadyScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizReadyScreenVC.swift; sourceTree = "<group>"; };
+		C498ED5F2713B43100C54AA9 /* BaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCard.swift; sourceTree = "<group>"; };
+		C498ED612713BCEB00C54AA9 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +119,17 @@
 			children = (
 				C42E40D827131FA500813F9A /* AppDelegate.swift */,
 				C42E40DA27131FA500813F9A /* SceneDelegate.swift */,
-				C42E40DC27131FA500813F9A /* ViewController.swift */,
+				C4132145271B7C770034257B /* DeckManager.swift */,
+				C498ED5F2713B43100C54AA9 /* BaseCard.swift */,
+				C4132151271B91AD0034257B /* DeckListTableViewController.swift */,
+				C413219B271C992C0034257B /* NewDeckViewController.swift */,
+				C498ED612713BCEB00C54AA9 /* Deck.swift */,
 				C42E40DE27131FA500813F9A /* Main.storyboard */,
+				C479F70F2728A694002577C6 /* QuizReadyScreenVC.swift */,
+				C479F70D27277A64002577C6 /* AnswerDisplayViewController.swift */,
+				C479F70B27277A27002577C6 /* QuestionDisplayViewController.swift */,
+				C479F709272779F4002577C6 /* QuizPVC.swift */,
+				C46DEB7B27221FDF008B9653 /* CardEditVC.swift */,
 				C42E40E127131FA700813F9A /* Assets.xcassets */,
 				C42E40E327131FA700813F9A /* LaunchScreen.storyboard */,
 				C42E40E627131FA700813F9A /* Info.plist */,
@@ -258,9 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42E40DD27131FA500813F9A /* ViewController.swift in Sources */,
 				C42E40D927131FA500813F9A /* AppDelegate.swift in Sources */,
+				C479F7102728A694002577C6 /* QuizReadyScreenVC.swift in Sources */,
+				C498ED622713BCEB00C54AA9 /* Deck.swift in Sources */,
+				C4132146271B7C770034257B /* DeckManager.swift in Sources */,
+				C479F70C27277A27002577C6 /* QuestionDisplayViewController.swift in Sources */,
+				C498ED602713B43100C54AA9 /* BaseCard.swift in Sources */,
+				C46DEB7C27221FDF008B9653 /* CardEditVC.swift in Sources */,
 				C42E40DB27131FA500813F9A /* SceneDelegate.swift in Sources */,
+				C4132152271B91AD0034257B /* DeckListTableViewController.swift in Sources */,
+				C479F70A272779F4002577C6 /* QuizPVC.swift in Sources */,
+				C413219C271C992C0034257B /* NewDeckViewController.swift in Sources */,
+				C479F70E27277A64002577C6 /* AnswerDisplayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,8 +475,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XCBTW98MC4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = quiztake2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Flashcards;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -450,9 +488,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.madScience.quiztake2;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madScience.CSVFlashcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,8 +505,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XCBTW98MC4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = quiztake2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Flashcards;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -477,8 +518,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.madScience.quiztake2;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madScience.CSVFlashcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
